@@ -1,30 +1,65 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">Qilo</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- <p id="description">Introducing our innovative WeatherExplorer app, your go-to companion for real-time weather updates tailored to your favorite cities! Whether you're planning a weekend getaway, scheduling outdoor activities, or just staying informed about the conditions around the world.</p> -->
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🧐 Features</h2>
 
-## Expanding the ESLint configuration
+Here're some of the project's best features:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+*   Add Text
+*   get Text list
+*   Delete Text
+*   Weather Dashboard (Avg Temp of Week, Avg Rainfall of Week, Avg Humidity of Week, Current Temp)
+*   bar chart displaying avg temperature of previous week
+*   Notepad
+*   Find weather by (Country, State, City) name
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. In the project directory to install all library</p>
+
+```
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<p>2. Create .env file in root directory and insert below env variables:</p>
+
+```
+VITE_API_KEY = "Enter your openweathermap api key"
+```
+
+<p>3. In the project directory you can run:</p>
+
+```
+npm run dev
+```
+
+<p>4. For building Production build</p>
+
+```
+npm run build
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   React.JS
+*   Node.JS
+*   Tailwind CSS
+*   Html
+*   CSS
+*   JavaScript
+
+<h2>Project Screenshots:</h2>
+
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page1.png" alt="project-screenshot" ></span>
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page21.png" alt="project-screenshot" ></span>
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page22.png" alt="project-screenshot" ></span>
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page23.png" alt="project-screenshot" ></span>
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page2.png" alt="project-screenshot" ></span>
+

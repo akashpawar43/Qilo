@@ -13,7 +13,7 @@ const dummyData = {
 };
 
 export default function Task2() {
-    const [data, setData] = useState(dummyData);
+    const [data, ] = useState(dummyData);
     const [notes, setNotes] = useState(['Sample note 1', 'Sample note 2']);
     const [noteInput, setNoteInput] = useState('');
 
