@@ -15,8 +15,8 @@ export default function Task1() {
         setItems(items.filter((_, i) => i !== index));
     };
     return (
-        <div className="min-h-screen bg-zinc-900 w-full p-5 grid items-center">
-            <div className="max-w-xl w-full mx-auto bg-zinc-800 p-7 rounded shadow">
+        <div className="min-h-screen bg-gray-900 w-full p-5 grid items-center">
+            <div className="max-w-xl w-full mx-auto bg-gray-800 p-7 rounded shadow">
                 <div className="mb-4 text-white">
                     <h1 className="text-2xl font-bold">Akash Pawar</h1>
                     <p>Mail ID: akashsl1643pawar@gmail.com</p>
@@ -27,7 +27,7 @@ export default function Task1() {
                         type="text"
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
-                        className="border p-2 w-full mb-2"
+                        className=" py-2 px-3 w-full mb-2.5 bg-gray-700 text-zinc-200 focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-md"
                         placeholder="Enter new text"
                     />
                     <button
@@ -41,7 +41,7 @@ export default function Task1() {
                     {items.map((item, index) => (
                         <li
                             key={index}
-                            className="flex justify-between items-center bg-gray-200 p-2 my-2 rounded"
+                            className="flex justify-between items-center text-white bg-gray-700 py-2 px-3 my-2 rounded"
                         >
                             {item}
                             <button

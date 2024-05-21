@@ -33,7 +33,7 @@ export default function Task3() {
         }
     };
     return (
-        <div className=' bg-zinc-900 min-h-screen'>
+        <div className=' bg-gray-900 min-h-screen'>
             <div className="max-w-5xl m-auto bg-transparent">
                 <SearchBar onSearch={handleSearch} />
                 {error && <p className="error-message p-4 bg-red-500 rounded-lg text-white mx-4">{error}</p>}

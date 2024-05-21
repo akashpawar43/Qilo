@@ -32,7 +32,7 @@ export default function Task2() {
         }
     };
 
-    const deleteNote = (index:number) => {
+    const deleteNote = (index: number) => {
         setNotes(notes => notes.filter((_, i) => i !== index));
     }
 
@@ -49,39 +49,39 @@ export default function Task2() {
         ],
     };
     return (
-        <div className="min-h-screen bg-gray-100 p-5">
-            <div className="max-w-4xl mx-auto bg-white p-5 rounded shadow">
+        <div className="min-h-screen bg-gray-900 text-gray-100 p-5" >
+            <div className="max-w-4xl mx-auto bg-gray-800 p-5 rounded shadow">
                 <h1 className="text-2xl font-bold mb-4">Weather Dashboard</h1>
                 <div className="grid grid-cols-2 gap-4 mb-6">
-                    <div className="bg-blue-100 p-4 rounded shadow">
+                    <div className="bg-gray-700 p-4 rounded shadow">
                         <h2 className="font-bold">Avg Temp of Week</h2>
                         <p>{data.avgTemp} °C</p>
                     </div>
-                    <div className="bg-blue-100 p-4 rounded shadow">
+                    <div className="bg-gray-700 p-4 rounded shadow">
                         <h2 className="font-bold">Avg Rainfall of Week</h2>
                         <p>{data.avgRainfall} mm</p>
                     </div>
-                    <div className="bg-blue-100 p-4 rounded shadow">
+                    <div className="bg-gray-700 p-4 rounded shadow">
                         <h2 className="font-bold">Avg Humidity of Week</h2>
                         <p>{data.avgHumidity} %</p>
                     </div>
-                    <div className="bg-blue-100 p-4 rounded shadow">
+                    <div className="bg-gray-700 p-4 rounded shadow">
                         <h2 className="font-bold">Current Temp</h2>
                         <p>{data.currentTemp} °C</p>
                     </div>
                 </div>
-                <div className="bg-white p-5 rounded shadow mb-6">
+                <div className="bg-gray-800 p-5 rounded shadow mb-6">
                     <h2 className="font-bold mb-4">Average Temperature of Previous Week</h2>
                     <Bar data={chartData} />
                 </div>
-                <div className="bg-white p-5 rounded shadow">
+                <div className="bg-gray-800 p-5 rounded shadow">
                     <h2 className="text-xl font-bold mb-4">Notepad</h2>
                     <div className="mb-4">
                         <input
                             type="text"
                             value={noteInput}
                             onChange={(e) => setNoteInput(e.target.value)}
-                            className="border p-2 w-full mb-2"
+                            className="bg-gray-700 text-zinc-200 focus:outline-none focus:ring-blue-500 focus:ring-2 rounded-md py-2 px-3 w-full mb-2"
                             placeholder="Enter new note"
                         />
                         <button
@@ -95,7 +95,7 @@ export default function Task2() {
                         {notes.map((note, index) => (
                             <li
                                 key={index}
-                                className="flex justify-between items-center bg-gray-200 p-2 my-2 rounded"
+                                className="flex justify-between items-center bg-gray-700 py-2 px-2.5 my-2 rounded"
                             >
                                 {note}
                                 <button
@@ -109,6 +109,6 @@ export default function Task2() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
