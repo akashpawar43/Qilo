@@ -32,7 +32,7 @@ export default function Task2() {
         }
     };
 
-    const deleteNote = (index) => {
+    const deleteNote = (index:number) => {
         setNotes(notes => notes.filter((_, i) => i !== index));
     }
 
