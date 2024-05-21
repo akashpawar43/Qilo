@@ -58,8 +58,12 @@ Technologies used in the project:
 <h2>Project Screenshots:</h2>
 
 <span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page1.png" alt="project-screenshot" ></span>
+
+<h2>Page 2:</h2>
 <span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page21.png" alt="project-screenshot" ></span>
 <span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page22.png" alt="project-screenshot" ></span>
 <span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page23.png" alt="project-screenshot" ></span>
-<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page2.png" alt="project-screenshot" ></span>
+
+<h2>Page 3:</h2>
+<span><img src="https://github.com/akashpawar43/Qilo/blob/master/src/assets/page3.png" alt="project-screenshot" ></span>
 
