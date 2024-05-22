@@ -1,5 +1,16 @@
 
-export default function WeatherCard({ weatherData }) {
+type WeatherData = {
+    icon: string;
+    city: string;
+    temperature: number;
+    condition: string;
+}
+
+type WeatherCardProps = {
+    weatherData: WeatherData;
+}
+
+export default function WeatherCard({ weatherData }: WeatherCardProps) {
 
     return (
         <div className="weather-card flex w-full md:w-3/4 m-auto gap-4 justify-center items-center">

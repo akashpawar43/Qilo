@@ -3,6 +3,13 @@ import SearchBar from './SearchBar';
 import WeatherCard from './WeatherCard';
 import axios from 'axios';
 
+type WeatherData = {
+    icon: string;
+    city: string;
+    temperature: number;
+    condition: string;
+}
+
 export default function Task3() {
     const [weatherData, setWeatherData] = useState({});
     const [error, setError] = useState('');
@@ -38,7 +45,7 @@ export default function Task3() {
                 <SearchBar onSearch={handleSearch} />
                 {error && <p className="error-message p-4 bg-red-500 rounded-lg text-white mx-4">{error}</p>}
                 <main className=' w-full'>
-                    {Object.keys(weatherData).length > 0 && <WeatherCard weatherData={weatherData} />}
+                    {Object.keys(weatherData).length > 0 && <WeatherCard weatherData={weatherData as WeatherData} />}
                 </main>
             </div>
         </div>

@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { IoSearch } from "react-icons/io5";
 
-export default function SearchBar({ onSearch }) {
+type SearchBarProps = {
+    onSearch: (city: string) => void;
+}
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
     const [city, setCity] = useState('');
 
     const handleSearch = (e: { preventDefault: () => void; }) => {
